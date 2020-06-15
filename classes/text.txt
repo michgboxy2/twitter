@@ -1,0 +1,69 @@
+inline elements maintains the same line. (ii) It takes up just the space required to display the content. no margin/padding.
+
+box-sizing: border-box -: the margin and padding is part of content width and height calculation.
+box-sizing: content-box -: margin and padding not part of content width and height.
+margin:  -: auto to centre oerfectly
+margin-left -: auto //move element to far right
+
+POSITION ABSOLUTE:
+if an element has a position absolute without width or height, it behaves like an inline display by taking up space just enough to show its content.
+
+BACKGROUND IMAGE:
+background-image: url(img/image1.jpeg);
+background-size: 200px;
+background-repeat: no-repeat;
+background-position: 50px 50px; //to clip image if it exceeds size of box. 50px from left to right, 50px from top to bottom.
+background-position: right 50px bottom 50px; //starting point changed to bottom right corner.
+background-size: auto 300px; //width height
+background-size: cover; //image covers the box
+background-size: contain; //covers width but height is set automatically
+background-origin: padding-box; //padding is part of image
+background-origin: content-box; //image starts displaying after padding
+background-origin: border-box; //image start displaying from upper end of border.
+background-clip: border-box; //image start displaying from outer end of border //default
+background-clip: padding-box; //image start displaying from inside edge of border
+background-clip: content-box; //image start displaying from inside end of content.
+
+
+SHADOWS:
+text-shadow: 50px 40px 10px green;     //show is placed 50px to the right, 40px from the top, 10px for how blurry shadow should look, green for shadow color.
+box-shadow: 5px 5px 10px #777;
+
+
+TRANSITIONS:
+transition-property: width;
+transition-duration: 1s;
+/* transition-delay: 1s; */   //delay of transition
+transition-timing-function: linear; //default is ease. can be linear, ease-in, ease-out,  
+transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);cubicbezier.com. 1st and 3rd specifies start of effect, 2nd and 4th specifies end of effect.
+transition: width 1s 1s ease-in, background-color 5s;
+
+TRANSFORM:
+transition: transform 1s;
+
+transform: translate(100px, 200px); */   //bounce effect move element horizintally X axis and Vertically Y axis.
+transform: rotate(90deg);   //rotate effect
+transform: scale(2, 2);  //width, height //expansion effect
+transform: scaleX(2); //increase width
+transform: scaleY(y); //increase height
+transform: rotateZ(180deg);
+transform: rotateX(180deg);
+
+transform: skew(30deg, 20deg);  //slant transition effect
+
+transform: translate(200px, 200px) scale(1.5, 1.5);  //combine effects
+
+
+FLEXBOX:
+FLEX CONTAINER PROPERTIES-:
+Flex direction,
+justify-content
+alignItems
+alignSelf
+AlignContent
+flex-wrap
+
+FLEX ITEMS PROPERTIES:
+order: 1 //item with the highest oder value is the last in direction flow
+align-self - stretch
+flex-grow - 1 . //item expand with space available on screen size increase
